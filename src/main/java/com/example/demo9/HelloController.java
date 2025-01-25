@@ -4,8 +4,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.net.URI;
@@ -33,6 +35,28 @@ public class HelloController {
 
     @FXML
     private PasswordField senhaTextField;
+
+    @FXML
+    private VBox certificadosVBox;
+
+    @FXML
+    private Button certificadosHomeButton;
+
+    @FXML
+    private Button inscricoesButton2;
+
+    @FXML
+    private Button contaButton2;
+
+    @FXML
+    private Button homeButton2;
+
+    @FXML
+    private Button contaButton3;
+
+    @FXML
+    private Button homeButton3;
+
 
     @FXML
     protected void onCriarContaClick() {
@@ -78,29 +102,160 @@ public class HelloController {
     @FXML
     protected void onCertificadosClick() {
         try {
-
             FXMLLoader loader = new FXMLLoader(getClass().getResource("certificados.fxml"));
+            Parent root = loader.load();
 
-            // Load the root element (the top-level container) of the new FXML file
-
-
-            // Get the current stage (window) using the TextField's scene
-
-
-            // Set a new scene on the current stage, using the loaded root as its layout
-
-
-            // Show the updated stage with the new scene
-
+            Stage stage = (Stage) certificadosVBox.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
         } catch (Exception e) {
-            // If any exception occurs (e.g., the FXML file is not found or has errors),
-            // print an error message and the stack trace to debug the issue
-            System.out.println("Error loading new scene: " + e.getMessage());
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
             e.printStackTrace();
         }
+    }
 
 
+    @FXML
+    protected void onInscricoesClick() {
+        try {
+            System.out.println("Inscricoes clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("inscricoes.fxml"));
+            Parent root = loader.load();
 
+            Stage stage = (Stage) certificadosVBox.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML protected void onContaClick() {
+        try {
+            System.out.println("Conta clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("conta.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) certificadosVBox.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    protected void onHomeClick1() {
+        try {
+            System.out.println("Home clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("home.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) certificadosHomeButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    protected void onHomeClick2() {
+        try {
+            System.out.println("Home clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("home.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) homeButton2.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    protected void onInscricoesClick2() {
+        try {
+            System.out.println("Inscricoes2 clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("inscricoes.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) inscricoesButton2.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML protected void onContaClick2() {
+        try {
+            System.out.println("Conta clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("conta.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) contaButton2.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML protected void onContaClick3() {
+        try {
+            System.out.println("Conta clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("conta.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) contaButton3.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    protected void onHomeClick3() {
+        try {
+            System.out.println("Home clicked");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("home.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) homeButton3.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (NullPointerException e) {
+            System.out.println("Error: UI element not available in the current scene.");
+        } catch (Exception e) {
+            System.out.println("Error loading certificados.fxml: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     private String createJson(String nome, String senha) {

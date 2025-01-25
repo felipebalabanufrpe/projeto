@@ -12,7 +12,7 @@
          <children>
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;">
                <children>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="98.0" prefWidth="97.0" text="Home" textAlignment="JUSTIFY" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="98.0" prefWidth="97.0" text="Home" textAlignment="JUSTIFY" onAction="#onHomeClick2" fx:id="homeButton2"/>
                </children>
             </VBox>
             <VBox fx:id="certificadosVBox" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;">
@@ -22,39 +22,29 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="101.0" prefWidth="103.0" text="Inscrições" onAction="#onInscricoesClick"/>
+                  <Button mnemonicParsing="false" prefHeight="101.0" prefWidth="103.0" text="Inscrições" />
                </children>
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="111.0" prefWidth="115.0" text="Conta" fx:id="contaButton3" onAction="#onContaClick3"/>
+                  <Button mnemonicParsing="false" prefHeight="111.0" prefWidth="115.0" text="Conta" onAction="#onContaClick"/>
                </children>
             </VBox>
          </children>
       </HBox>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="14.0" prefHeight="55.0" prefWidth="89.0" text="Home" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="14.0" prefHeight="55.0" prefWidth="89.0" text="Home"  />
       <VBox layoutX="8.0" layoutY="55.0" prefHeight="358.0" prefWidth="617.0">
          <children>
             <AnchorPane prefHeight="134.0" prefWidth="624.0" style="-fx-border-color: black;">
                <children>
-                  <Label layoutX="285.0" layoutY="6.0" text="Evento 1" />
-                  <Label layoutX="8.0" layoutY="23.0" text="Data/horario" />
-                  <Label layoutX="8.0" layoutY="40.0" text="Local" />
-                  <Label layoutX="8.0" layoutY="55.0" text="Descricao" />
-                  <Label layoutX="8.0" layoutY="72.0" text="Preco" />
-                  <Label layoutX="8.0" layoutY="89.0" text="Participantes maximos" />
-                  <Button layoutX="9.0" layoutY="106.0" mnemonicParsing="false" text="Recursos" />
+                  <Label layoutX="253.0" layoutY="6.0" text="Inscrito em: Evento 1" />
+                  <Button layoutX="258.0" layoutY="41.0" mnemonicParsing="false" text="Acessar evento" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="134.0" prefWidth="624.0" style="-fx-border-color: black;">
                <children>
-                  <Label layoutX="285.0" layoutY="6.0" text="Evento 2" />
-                  <Label layoutX="8.0" layoutY="23.0" text="Data/horario" />
-                  <Label layoutX="8.0" layoutY="40.0" text="Local" />
-                  <Label layoutX="8.0" layoutY="55.0" text="Descricao" />
-                  <Label layoutX="8.0" layoutY="72.0" text="Preco" />
-                  <Label layoutX="8.0" layoutY="89.0" text="Participantes maximos" />
-                  <Button layoutX="9.0" layoutY="106.0" mnemonicParsing="false" text="Recursos" />
+                  <Label layoutX="253.0" layoutY="6.0" text="Inscrito em: Evento 2" />
+                  <Button layoutX="258.0" layoutY="41.0" mnemonicParsing="false" text="Acessar evento" />
                </children>
             </AnchorPane>
          </children>
