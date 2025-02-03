@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo9.HelloController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo9.InscricoesController">
    <children>
       <HBox layoutY="417.0" prefHeight="96.0" prefWidth="625.0" spacing="60.0">
          <children>
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;">
                <children>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="98.0" prefWidth="97.0" text="Home" textAlignment="JUSTIFY" onAction="#onHomeClick2" fx:id="homeButton2"/>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="98.0" prefWidth="97.0" text="Home" textAlignment="JUSTIFY" onAction="#onHomeClick" fx:id="homeButton2"/>
                </children>
             </VBox>
             <VBox fx:id="certificadosVBox" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;">
